@@ -91,7 +91,7 @@ const ProposalPresentation = () => {
                 <div className="h-full">
                     <h2 className="text-3xl font-semibold text-blue-800 mb-6">Executive Overview</h2>
                     <div className="mb-6">
-                        <p className="text-lg mb-4">With over 10 years of experience in software engineering and consulting, I bring proven expertise in developing and implementing data processing solutions that transform business operations.</p>
+                        <p className="text-lg mb-4">With over 12 years of experience in software engineering and consulting, I bring proven expertise in developing and implementing data processing solutions that transform business operations.</p>
                     </div>
 
                     <h3 className="text-xl font-semibold text-blue-700 mb-4">Three pillars of effective transformation:</h3>
@@ -960,7 +960,7 @@ const ProposalPresentation = () => {
                     <div className="mt-8 p-6 bg-blue-50 rounded-lg shadow-md">
                         <h3 className="text-2xl font-semibold text-blue-800 mb-4 text-center">Contact Information</h3>
                         <div className="text-center text-gray-800">
-                            <p className="text-xl font-medium mb-2">Nikhil</p>
+                            <p className="text-xl font-medium mb-2">Nikhil Thakur</p>
                             <p className="mb-1"><a href="mailto:thakur_nikhil@hotmail.com" className="text-blue-600 hover:underline">thakur_nikhil@hotmail.com</a></p>
                             <p className="mb-1">(507) 382-8943</p>
                             <p>San Francisco, CA</p>
