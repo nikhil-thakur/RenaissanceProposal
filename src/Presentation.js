@@ -86,7 +86,7 @@ const ProposalPresentation = () => {
 
         // Slide 3: Executive Overview
         {
-            title: "Project Understanding",
+            title: "Executive Overview",
             content: (
                 <div className="h-full">
                     <h2 className="text-3xl font-semibold text-blue-800 mb-6">Executive Overview</h2>
@@ -121,7 +121,7 @@ const ProposalPresentation = () => {
 
         // Slide 4: Understanding Your Challenge
         {
-            title: "Project Understanding",
+            title: "Understanding Your Challenge",
             content: (
                 <div className="h-full">
                     <h2 className="text-3xl font-semibold text-blue-800 mb-8">Understanding Your Challenge</h2>
@@ -390,7 +390,7 @@ const ProposalPresentation = () => {
             content: (
                 <div className="h-full">
                     <h2 className="text-3xl font-semibold text-blue-800 mb-2">Implementation Roadmap</h2>
-                    <h3 className="text-2xl font-medium text-blue-700 mb-6">Phase 2: Prototype Development</h3>
+                    <h3 className="text-2xl font-medium text-blue-700 mb-6">Phase 2: MVP Development</h3>
 
                     <div className="flex">
                         <div className="w-1/2 pr-8">
