@@ -144,8 +144,8 @@ const ProposalPresentation = () => {
                         </div>
 
                         <div className="bg-white p-5 rounded-lg shadow-md border-l-4 border-red-500">
-                            <h4 className="font-semibold text-xl mb-2 text-gray-800">File handling across multiple formats</h4>
-                            <p className="text-gray-600">Inefficient processing of diverse document types</p>
+                            <h4 className="font-semibold text-xl mb-2 text-gray-800">Data consistency across multiple files</h4>
+                            <p className="text-gray-600">Inefficient processing of complex data</p>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@ const ProposalPresentation = () => {
                                 <li>Automate manual data entry and validation</li>
                                 <li>Standardize data formatting</li>
                                 <li>Implement intelligent error detection</li>
-                                <li>Create streamlined approval processes</li>
+                                <li>Create optional approval processes</li>
                             </ul>
                         </div>
 
@@ -183,7 +183,7 @@ const ProposalPresentation = () => {
                                 <li>Design cloud-native architecture</li>
                                 <li>Build modular components</li>
                                 <li>Implement horizontal scaling</li>
-                                <li>Optimize database performance</li>
+                                <li>Power microservices through storage</li>
                             </ul>
                         </div>
 
@@ -228,8 +228,8 @@ const ProposalPresentation = () => {
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Interactive dashboards with drill-down capabilities</li>
                                 <li>Scheduled report generation and distribution</li>
-                                <li>Custom report builder for ad-hoc analysis</li>
-                                <li>Export functionality in multiple formats</li>
+                                <li>Custom reports for project compliance</li>
+                                <li>Export to pdf functionality</li>
                             </ul>
                         </div>
                     </div>
@@ -248,7 +248,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <h3 className="text-xl font-semibold text-blue-700 mb-4">Enhanced File Handling System</h3>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                                <li>Support for multiple file formats (PDF, Excel, CSV, etc.)</li>
+                                <li>Streamline file formats (PDF, Excel, CSV, etc.)</li>
                                 <li>Intelligent document parsing and data extraction</li>
                                 <li>Version control and document history</li>
                                 <li>Batch processing capabilities</li>
@@ -293,7 +293,7 @@ const ProposalPresentation = () => {
                         <div className="w-1/3 px-2">
                             <div className="bg-blue-100 border-t-4 border-blue-600 rounded-lg p-6 h-full shadow-md">
                                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Phase 2</h3>
-                                <h4 className="text-lg font-medium text-blue-700 mb-4">Prototype Development</h4>
+                                <h4 className="text-lg font-medium text-blue-700 mb-4">MVP</h4>
                                 <p className="text-gray-700 mb-2">5-7 weeks</p>
                                 <ul className="list-disc pl-5 text-gray-700 text-sm">
                                     <li>Core functionality</li>
@@ -306,7 +306,7 @@ const ProposalPresentation = () => {
                         <div className="w-1/3 px-2">
                             <div className="bg-blue-100 border-t-4 border-blue-600 rounded-lg p-6 h-full shadow-md">
                                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Phase 3</h3>
-                                <h4 className="text-lg font-medium text-blue-700 mb-4">Deployment & Optimization</h4>
+                                <h4 className="text-lg font-medium text-blue-700 mb-4">Partner Onboarding</h4>
                                 <p className="text-gray-700 mb-2">4-8 weeks</p>
                                 <ul className="list-disc pl-5 text-gray-700 text-sm">
                                     <li>Full system deployment</li>
@@ -398,7 +398,7 @@ const ProposalPresentation = () => {
                                 <h4 className="text-xl font-semibold text-blue-800 mb-4">Timeline: 5-7 weeks</h4>
                                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                     <li>Core functionality implementation</li>
-                                    <li>Integration with existing systems</li>
+                                    <li>Engineering process foundations</li>
                                     <li>User feedback collection</li>
                                     <li>Iterative refinement</li>
                                     <li>Initial testing and validation</li>
@@ -456,7 +456,7 @@ const ProposalPresentation = () => {
                     <div className="flex">
                         <div className="w-1/2 pr-8">
                             <div className="bg-blue-50 p-6 rounded-lg shadow-md mb-6">
-                                <h4 className="text-xl font-semibold text-blue-800 mb-4">Timeline: 4-8 weeks</h4>
+                                <h4 className="text-xl font-semibold text-blue-800 mb-4">Timeline: 6-9 weeks</h4>
                                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                     <li>Full system deployment</li>
                                     <li>Team onboarding and training</li>
@@ -469,9 +469,8 @@ const ProposalPresentation = () => {
                             <div className="bg-green-50 p-6 rounded-lg shadow-md border-l-4 border-green-600">
                                 <h4 className="text-xl font-semibold text-green-800 mb-4">Deployment Strategy</h4>
                                 <ul className="list-disc pl-6 text-gray-700 space-y-2">
-                                    <li>Phased rollout to minimize disruption</li>
-                                    <li>Parallel running with legacy systems</li>
-                                    <li>Data migration and validation</li>
+                                    <li>Phased rollout to onboard projects</li>
+                                    <li>Parallel running with current legacy systems</li>
                                     <li>System monitoring and early issue resolution</li>
                                     <li>Rollback capabilities if needed</li>
                                 </ul>
@@ -521,22 +520,12 @@ const ProposalPresentation = () => {
                                     <li className="flex items-center">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
                                         <span className="font-semibold text-gray-800">Technical Lead/Architect:</span>
-                                        <span className="ml-2 text-gray-700">System design & technical direction</span>
+                                        <span className="ml-2 text-gray-700">System design & technical direction </span>
                                     </li>
                                     <li className="flex items-center">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                                        <span className="font-semibold text-gray-800">2-3 Full-stack Developers:</span>
-                                        <span className="ml-2 text-gray-700">Core implementation</span>
-                                    </li>
-                                    <li className="flex items-center">
-                                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                                        <span className="font-semibold text-gray-800">Data Engineer:</span>
-                                        <span className="ml-2 text-gray-700">Data processing & integration</span>
-                                    </li>
-                                    <li className="flex items-center">
-                                        <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                                        <span className="font-semibold text-gray-800">UX/UI Designer (part-time):</span>
-                                        <span className="ml-2 text-gray-700">Interface design</span>
+                                        <span className="font-semibold text-gray-800">1-2 Full-stack Developers:</span>
+                                        <span className="ml-2 text-gray-700">Core implementation </span>
                                     </li>
                                     <li className="flex items-center">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
@@ -588,7 +577,7 @@ const ProposalPresentation = () => {
                         </div>
 
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-semibold text-blue-800 mb-4">Phase 2: Prototype Development</h3>
+                            <h3 className="text-xl font-semibold text-blue-800 mb-4">Phase 2: MVP Development</h3>
                             <div className="text-2xl font-bold text-blue-700 mb-2">$45,000 - $60,000</div>
                             <p className="text-gray-700 mb-4">5-7 weeks</p>
                             <div className="border-t border-gray-300 pt-4">
@@ -597,13 +586,15 @@ const ProposalPresentation = () => {
                                     <li>Functional prototype</li>
                                     <li>Integration documentation</li>
                                     <li>User testing results</li>
+                                    <li>Cloud infrastructure setup</li>
+                                    <li>Pilot project onboarding</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-semibold text-blue-800 mb-4">Phase 3: Deployment & Optimization</h3>
-                            <div className="text-2xl font-bold text-blue-700 mb-2">$40,000 - $55,000</div>
+                            <h3 className="text-xl font-semibold text-blue-800 mb-4">Phase 3: Go-Live </h3>
+                            <div className="text-2xl font-bold text-blue-700 mb-2">$30,000 - $45,000</div>
                             <p className="text-gray-700 mb-4">4-8 weeks</p>
                             <div className="border-t border-gray-300 pt-4">
                                 <h4 className="font-semibold mb-2">Deliverables:</h4>
@@ -620,7 +611,7 @@ const ProposalPresentation = () => {
                         <h3 className="text-xl font-semibold text-amber-800 mb-4">Optional: Ongoing Support & Enhancement</h3>
                         <div className="flex items-center">
                             <div className="w-1/3">
-                                <div className="text-2xl font-bold text-amber-700 mb-2">$8,000 - $12,000</div>
+                                <div className="text-2xl font-bold text-amber-700 mb-2">$3,000 - $7,000</div>
                                 <p className="text-gray-700">Monthly retainer</p>
                             </div>
                             <div className="w-2/3 pl-6 border-l border-gray-300">
@@ -871,7 +862,7 @@ const ProposalPresentation = () => {
                             </div>
                             <div>
                                 <h3 className="text-xl font-semibold text-blue-800 mb-2">Domain knowledge</h3>
-                                <p className="text-gray-700">In construction and related industries, understanding the unique challenges of project data management, document processing, and reporting requirements specific to your field.</p>
+                                <p className="text-gray-700">In technology and it's application, understanding the unique challenges of project data management, document processing, and reporting requirements specific to compliance</p>
                             </div>
                         </div>
                     </div>
@@ -916,7 +907,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">3</div>
-                                <h3 className="text-xl font-semibold text-blue-800">Prototype development plan</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">MVP development plan</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Define development sprints</li>
@@ -960,7 +951,7 @@ const ProposalPresentation = () => {
                     <div className="mt-8 p-6 bg-blue-50 rounded-lg shadow-md">
                         <h3 className="text-2xl font-semibold text-blue-800 mb-4 text-center">Contact Information</h3>
                         <div className="text-center text-gray-800">
-                            <p className="text-xl font-medium mb-2">Nikhil</p>
+                            <p className="text-xl font-medium mb-2">Nikhil Thakur</p>
                             <p className="mb-1"><a href="mailto:thakur_nikhil@hotmail.com" className="text-blue-600 hover:underline">thakur_nikhil@hotmail.com</a></p>
                             <p className="mb-1">(507) 382-8943</p>
                             <p>San Francisco, CA</p>
