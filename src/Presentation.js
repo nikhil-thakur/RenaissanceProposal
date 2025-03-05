@@ -25,7 +25,7 @@ const ProposalPresentation = () => {
             title: "Overview",
             content: (
                 <div className="h-full">
-                    <h2 className="text-3xl font-semibold text-blue-800 mb-8">OVERVIEW</h2>
+                    <h2 className="text-3xl font-semibold text-blue-800 mb-8">Overview</h2>
 
                     <div className="grid grid-cols-2 gap-8">
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md h-full">
