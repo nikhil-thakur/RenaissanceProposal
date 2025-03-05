@@ -22,10 +22,10 @@ const ProposalPresentation = () => {
 
         // Slide 2: Agenda
         {
-            title: "Agenda",
+            title: "Overview",
             content: (
                 <div className="h-full">
-                    <h2 className="text-3xl font-semibold text-blue-800 mb-8">AGENDA</h2>
+                    <h2 className="text-3xl font-semibold text-blue-800 mb-8">OVERVIEW</h2>
 
                     <div className="grid grid-cols-2 gap-8">
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md h-full">
@@ -881,7 +881,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">1</div>
-                                <h3 className="text-xl font-semibold text-blue-800">Technical discovery workshop</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">Functional & Technical discovery workshops</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Gather all stakeholders</li>
