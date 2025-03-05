@@ -881,7 +881,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">1</div>
-                                <h3 className="text-xl font-semibold text-blue-800">Functional & Technical discovery workshops</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">Functional & Technical Discovery Workshops</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Gather all stakeholders</li>
@@ -894,7 +894,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">2</div>
-                                <h3 className="text-xl font-semibold text-blue-800">Detailed requirements documentation</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">Detailed Requirements Documentation</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Formalize business requirements</li>
@@ -907,7 +907,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">3</div>
-                                <h3 className="text-xl font-semibold text-blue-800">MVP development plan</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">MVP Development Plan</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Define development sprints</li>
@@ -920,7 +920,7 @@ const ProposalPresentation = () => {
                         <div className="bg-blue-50 p-6 rounded-lg shadow-md">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center mr-6 text-2xl font-bold text-white">4</div>
-                                <h3 className="text-xl font-semibold text-blue-800">Implementation timeline</h3>
+                                <h3 className="text-xl font-semibold text-blue-800">Implementation Timeline</h3>
                             </div>
                             <ul className="list-disc pl-6 text-gray-700 space-y-2">
                                 <li>Finalize project schedule</li>
