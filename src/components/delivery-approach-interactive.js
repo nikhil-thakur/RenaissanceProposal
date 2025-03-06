@@ -25,7 +25,7 @@ const DeliveryApproachInteractive = () => {
       color: "bg-pink-500",
       textColor: "text-pink-500",
       borderColor: "border-pink-500",
-      description: "Building and deploying a Minimum Viable Product with the core functionality needed to onboard 1 new Project successfully as our north star goal.",
+      description: "Building and deploying a Minimum Viable Product with the core functionality needed to onboard a new Project successfully as our north star goal.",
       activities: [
         { name: "Core Feature Development", description: "Build essential features required for basic project management" },
         { name: "First Project Onboarding", description: "Successfully implement and configure the system for the pilot project" },
