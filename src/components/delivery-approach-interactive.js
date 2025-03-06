@@ -129,21 +129,6 @@ const DeliveryApproachInteractive = () => {
                 </div>
               </div>
           )}
-
-          {/* Growth Path Arrow */}
-          <div className="flex mb-12">
-            <div className="w-16"></div>
-            <div className="flex-1">
-              <div className="bg-orange-500 text-white font-bold py-3 px-6 rounded-lg shadow flex items-center">
-                <span>Implementation Journey</span>
-                <div className="ml-auto">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
   );
