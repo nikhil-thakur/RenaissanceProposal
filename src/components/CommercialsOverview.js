@@ -118,7 +118,7 @@ const CommercialsOverview = () => {
 
                     <div className="mt-6 text-sm text-gray-600">
                         <p className="mb-2">This package includes the complete implementation timeline outlined in the proposal, with the same quality of delivery and attention to detail.</p>
-                        <p>Price is exclusive of applicable taxes. Payment terms are net 30 days from invoice date. Travel expenses, if necessary, will be billed separately.</p>
+                        <p>Payment terms are net 7 days from invoice date. Travel expenses, if necessary, will be billed separately.</p>
                     </div>
                 </div>
 
@@ -129,7 +129,7 @@ const CommercialsOverview = () => {
                     <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
                         <div className="bg-orange-500 text-white p-5">
                             <h4 className="text-xl font-bold">Expected Benefits</h4>
-                            <p className="mt-1 opacity-90">Implementation of our solution typically delivers the following results:</p>
+                            <p className="mt-1 opacity-90">Implementation of solution aims to deliver the following results:</p>
                         </div>
 
                         <div className="p-5">
