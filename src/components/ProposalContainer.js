@@ -113,7 +113,7 @@ const ProposalContainer = () => {
             {/* Progress indicator at top */}
             <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
                 <div className="max-w-6xl mx-auto px-4 py-3 flex items-center">
-                    <div className="mr-6 font-bold text-gray-800">Project Implementation Proposal</div>
+                    <div className="mr-6 font-bold text-gray-800">Project Proposal</div>
                     <div className="flex-1 flex items-center">
                         <div
                             className={`mr-4 cursor-pointer transition-colors ${activeSection === 'overview' ? 'text-orange-500 font-medium' : 'text-gray-500'}`}
