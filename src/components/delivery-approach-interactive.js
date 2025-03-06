@@ -15,7 +15,7 @@ const DeliveryApproachInteractive = () => {
       activities: [
         { name: "Onboarding", description: "Set up cloud environments, processes, and foundations for software development " },
         { name: "Requirements refinement", description: "Build detailed requirements documents for a shared understanding" },
-        { name: "Architecture blueprint", description: "Clear technical direction and architecture and define success criteria and metrics" },
+        { name: "Architecture blueprint", description: "Clear technical direction, architecture & define success criteria and metrics" },
       ]
     },
     {
