@@ -26,8 +26,7 @@ const ProposalOverview = () => {
                             <div>
                                 <h3 className="text-lg font-semibold text-orange-500 mb-2">Solution</h3>
                                 <p className="text-gray-700">
-                                    A phased deployment of a custom-built platform that integrates with existing
-                                    enterprise systems while providing enhanced visibility and control over projects.
+                                    A phased deployment of a custom-built platform that processes time cards to monitor compliance while providing enhanced visibility and control over projects.
                                 </p>
                             </div>
 
