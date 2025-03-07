@@ -91,7 +91,7 @@ const ProposalPresentation = () => {
                 <div className="h-full">
                     <h2 className="text-3xl font-semibold text-blue-800 mb-6">Executive Overview</h2>
                     <div className="mb-6">
-                        <p className="text-lg mb-4">With over 10 years of experience in software engineering and consulting, I bring proven expertise in developing and implementing data processing solutions that transform business operations.</p>
+                        <p className="text-lg mb-4">With over 12 years of experience in software engineering and consulting, I bring proven expertise in developing and implementing data processing solutions that transform business operations.</p>
                     </div>
 
                     <h3 className="text-xl font-semibold text-blue-700 mb-4">Three pillars of effective transformation:</h3>
