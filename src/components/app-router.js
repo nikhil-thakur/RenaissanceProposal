@@ -8,6 +8,9 @@ const AppRouter = () => {
   // Function to determine if a route is active
   const isActive = (path) => location.pathname === path;
 
+  // Get current year dynamically
+  const currentYear = new Date().getFullYear();
+
   return (
       <div className="min-h-screen bg-gray-100">
         {/* Navigation Header */}
@@ -179,9 +182,9 @@ const AppRouter = () => {
         </nav>
 
         {/* Main Content Area */}
-        <main className="py-6">
+        <main className="flex-grow py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <Outlet />
+            <Outlet/>
           </div>
         </main>
 
@@ -190,18 +193,21 @@ const AppRouter = () => {
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
             <div className="flex justify-between items-center">
               <div className="text-sm text-gray-500">
-                © 2023 Renaissance Project Proposal
+                © {currentYear} Renaissance Project Proposal
               </div>
               <div className="flex space-x-6">
-                <a href="#" className="text-gray-400 hover:text-gray-500">
+                <a
+                    href="mailto:thakur_nikhil@hotmail.com"
+                    className="text-gray-400 hover:text-gray-500"
+                >
                   Contact Us
                 </a>
-                <a href="#" className="text-gray-400 hover:text-gray-500">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-gray-400 hover:text-gray-500">
+                <Link
+                    to="/terms"
+                    className="text-gray-400 hover:text-gray-500"
+                >
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
           </div>

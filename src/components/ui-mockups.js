@@ -25,8 +25,8 @@ const KeySystemMockups = () => {
                   <span className="font-semibold">Project Management Dashboard</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">John Smith</span>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">JS</div>
+                  <span className="mr-4">Sandy Paben</span>
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">SP</div>
                 </div>
               </div>
 
@@ -147,8 +147,8 @@ const KeySystemMockups = () => {
                   <span className="font-semibold">Time Card Management</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="mr-4">Sarah Williams</span>
-                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">SW</div>
+                  <span className="mr-4">Simran Chavda</span>
+                  <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">SC</div>
                 </div>
               </div>
 

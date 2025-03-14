@@ -12,6 +12,7 @@ import ResourceAllocationPlan from "./components/resource-allocation";
 import AppRouter from "./components/app-router";
 import ServicesOffered from "./components/ServicesOffered";
 import CommercialsOverview from "./components/CommercialsOverview";
+import TermsOfService from "./components/TermsOfService";
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <Route path="deliverables" element={<DetailedDeliverables />} />
                     <Route path="risks" element={<RiskManagementFramework />} />
                     <Route path="resources" element={<ResourceAllocationPlan />} />
+                    <Route path="terms" element={<TermsOfService />} />
                 </Route>
             </Routes>
         </Router>
