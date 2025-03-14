@@ -41,75 +41,11 @@ const ProposalContainer = () => {
 
     return (
         <div className="relative">
-
-
-            {/* Progress indicator at top */}
-            <div className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-                <div className="max-w-6xl mx-auto px-4 py-3 flex items-center">
-                    <div className="mr-6 font-bold text-gray-800">Proposal</div>
-                    <div className="flex-1 flex items-center">
-                        <div
-                            className={`mr-4 cursor-pointer transition-colors ${activeSection === 'overview' ? 'text-orange-500 font-medium' : 'text-gray-500'}`}
-                            onClick={() => scrollToSection(overviewRef)}
-                        >
-                            Overview
-                        </div>
-                        <div className="w-4 h-px bg-gray-300 mr-4"></div>
-                        <div
-                            className={`mr-4 cursor-pointer transition-colors ${activeSection === 'timeline' ? 'text-orange-500 font-medium' : 'text-gray-500'}`}
-                            onClick={() => scrollToSection(timelineRef)}
-                        >
-                            Timeline
-                        </div>
-                        <div className="w-4 h-px bg-gray-300 mr-4"></div>
-                        <div
-                            className={`mr-4 cursor-pointer transition-colors ${activeSection === 'services' ? 'text-orange-500 font-medium' : 'text-gray-500'}`}
-                            onClick={() => scrollToSection(servicesRef)}
-                        >
-                            Services
-                        </div>
-                        <div className="w-4 h-px bg-gray-300 mr-4"></div>
-                        <div
-                            className={`cursor-pointer transition-colors ${activeSection === 'commercials' ? 'text-orange-500 font-medium' : 'text-gray-500'}`}
-                            onClick={() => scrollToSection(commercialsRef)}
-                        >
-                            Investment
-                        </div>
-                    </div>
-                </div>
-                {/* Progress bar */}
-                <div className="h-1 bg-gray-100">
-                    <div
-                        className="h-full bg-orange-500 transition-all duration-300"
-                        style={{
-                            width: activeSection === 'overview' ? '25%' :
-                                activeSection === 'timeline' ? '50%' :
-                                    activeSection === 'services' ? '75%' : '100%'
-                        }}
-                    ></div>
-                </div>
-            </div>
-
-            {/* Content with padding for fixed header */}
-            <div className="pt-16">
+            {/* Content */}
+            <div>
                 {/* Overview Section */}
                 <div ref={overviewRef} className="min-h-screen flex items-center">
                     <ProposalOverview />
-                </div>
-
-                {/* Timeline Section */}
-                <div ref={timelineRef} className="min-h-screen flex items-center">
-                    <DeliveryApproachInteractive />
-                </div>
-
-                {/* Services Section */}
-                <div ref={servicesRef} className="min-h-screen flex items-center">
-                    <ServicesOffered />
-                </div>
-
-                {/* Commercials Section */}
-                <div ref={commercialsRef} className="min-h-screen flex items-center">
-                    <CommercialsOverview />
                 </div>
             </div>
 
