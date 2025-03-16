@@ -53,7 +53,7 @@ const SimpleDeliverablesList = () => {
                         PDF Document
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Project Stakeholders, Executive Sponsors
+                        Project Stakeholders, Executive Sponsor
                       </td>
                     </tr>
                     <tr className="bg-gray-50">
@@ -121,10 +121,10 @@ const SimpleDeliverablesList = () => {
                         Facilitated session to gather and validate requirements from key stakeholders
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        In-person or Virtual Session
+                        Virtual Session
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Key Users, Department Heads
+                        Key Users
                       </td>
                     </tr>
                     <tr className="bg-gray-50">
@@ -135,7 +135,7 @@ const SimpleDeliverablesList = () => {
                         Session to document current and future state process flows
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        In-person or Virtual Session
+                        Virtual Session
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         Process Owners, Key Users
@@ -219,7 +219,7 @@ const SimpleDeliverablesList = () => {
                         Software Module
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        System Users, Compliance Team
+                        System Users
                       </td>
                     </tr>
                   </tbody>
@@ -276,7 +276,7 @@ const SimpleDeliverablesList = () => {
                         PDF Document
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        System Administrators, IT Team
+                        System Administrators
                       </td>
                     </tr>
                   </tbody>
@@ -329,7 +329,7 @@ const SimpleDeliverablesList = () => {
                         Software Module
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Managers, Executives
+                        System Users, Executive Sponsor
                       </td>
                     </tr>
                     <tr className="bg-gray-50">
@@ -343,7 +343,7 @@ const SimpleDeliverablesList = () => {
                         Software Module
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        Managers, Project Managers, Executives
+                        All System Users
                       </td>
                     </tr>
                     <tr>

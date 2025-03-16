@@ -15,7 +15,7 @@ const RiskManagementFramework = () => {
     },
     {
       id: "data",
-      name: "Data Quality & Migration Risks",
+      name: "Data Quality Risks",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
@@ -91,32 +91,14 @@ const RiskManagementFramework = () => {
     {
       id: "data-1",
       category: "data",
-      title: "Data Migration Accuracy",
-      description: "Risk of incomplete or inaccurate data migration from legacy systems, affecting historical reporting and compliance records.",
-      impact: "High",
-      probability: "Medium",
-      mitigationStrategies: [
-        "Comprehensive data mapping and validation plan",
-        "Multi-phase migration with verification at each stage",
-        "Maintain parallel systems during transition period",
-        "Automated reconciliation and data integrity checks",
-        "Create data validation reports for stakeholder review"
-      ],
-      contingencyPlan: "Ability to roll back to legacy system temporarily while fixing migration issues. Manual reconciliation process for critical data discrepancies.",
-      owner: "Data Migration Specialist",
-      monitoringMethod: "Data reconciliation reports, validation logs, sampling verification of migrated records, user feedback on data accuracy"
-    },
-    {
-      id: "data-2",
-      category: "data",
       title: "Data Quality Issues",
       description: "Risk that existing data inconsistencies and quality issues may affect the effectiveness of the new system's compliance checks.",
       impact: "High",
       probability: "High",
       mitigationStrategies: [
-        "Pre-migration data cleansing process",
+        "Data cleansing process",
         "Data profiling to identify and address common quality issues",
-        "Implement data validation rules during migration",
+        "Implement data validation rules",
         "User training on data quality standards",
         "Ongoing data quality monitoring processes"
       ],
@@ -133,51 +115,15 @@ const RiskManagementFramework = () => {
       probability: "Medium",
       mitigationStrategies: [
         "Comprehensive API testing plan with mock services",
-        "Implement circuit breakers and fallback mechanisms",
         "Detailed integration documentation and error handling",
         "Phased integration approach starting with non-critical systems",
         "Regular connection testing and monitoring"
       ],
       contingencyPlan: "Manual data entry/export processes as temporary fallback. Implement asynchronous retry mechanisms for failed integrations.",
-      owner: "Integration Developer",
+      owner: "Technical Lead",
       monitoringMethod: "API health monitoring, error rates tracking, integration success/failure logs, automated alerts for integration issues"
     },
-    {
-      id: "integration-2",
-      category: "integration",
-      title: "Authentication System Integration",
-      description: "Risk that single sign-on (SSO) integration with enterprise identity provider may not function correctly for all user types.",
-      impact: "Medium",
-      probability: "Low",
-      mitigationStrategies: [
-        "Early testing with identity provider across all user roles",
-        "Implement local authentication as fallback",
-        "Thorough testing of permission mappings",
-        "Collaboration with IT security team",
-        "Staged rollout starting with a pilot group"
-      ],
-      contingencyPlan: "Temporary local authentication system with manual user provisioning process. Direct coordination with IT help desk for urgent access needs.",
-      owner: "Security Specialist",
-      monitoringMethod: "Authentication success/failure logs, user access reports, security monitoring alerts"
-    },
-    {
-      id: "adoption-1",
-      category: "adoption",
-      title: "Resistance to New Processes",
-      description: "Risk that users may resist adopting new time entry and compliance workflows due to increased rigor compared to current processes.",
-      impact: "High",
-      probability: "High",
-      mitigationStrategies: [
-        "Early stakeholder engagement in design process",
-        "Clear communication of benefits and reasons for change",
-        "Comprehensive training program tailored to different user roles",
-        "Identify and train department champions",
-        "Phased approach to introducing stricter compliance checks"
-      ],
-      contingencyPlan: "Additional targeted training sessions, executive sponsorship reinforcement, temporary process simplification with gradual complexity increase.",
-      owner: "Change Management Lead",
-      monitoringMethod: "User adoption metrics, feedback surveys, help desk ticket analysis, usage pattern monitoring"
-    },
+
     {
       id: "adoption-2",
       category: "adoption",
@@ -193,7 +139,7 @@ const RiskManagementFramework = () => {
         "Provide hands-on practice environments"
       ],
       contingencyPlan: "Rapid response training team for post-launch support. Simplified quick reference guides and increased help desk staffing during initial rollout.",
-      owner: "Training Coordinator",
+      owner: "Project Manager",
       monitoringMethod: "Training completion rates, knowledge assessment scores, help desk requests categorized by knowledge gaps"
     },
     {

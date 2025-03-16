@@ -10,7 +10,6 @@ import RiskManagementFramework from "./components/risk-management";
 import DetailedDeliverables from "./components/deliverables-list";
 import ResourceAllocationPlan from "./components/resource-allocation";
 import AppRouter from "./components/app-router";
-import ServicesOffered from "./components/ServicesOffered";
 import CommercialsOverview from "./components/CommercialsOverview";
 import TermsOfService from "./components/TermsOfService";
 
@@ -22,7 +21,6 @@ function App() {
                     {/* Main proposal container routes with internal navigation */}
                     <Route index element={<ProposalContainer />} />
                     <Route path="timeline" element={<DetailedImplementationTimeline />} />
-                    <Route path="services" element={<ServicesOffered />} />
                     <Route path="commercials" element={<CommercialsOverview />} />
 
                     {/* Additional routes from the nav */}

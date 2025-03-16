@@ -19,7 +19,7 @@ const AppRouter = () => {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <span className="text-orange-500 font-bold text-xl">Renaissance Project Proposal</span>
+                  <span className="text-orange-500 font-bold text-xl">Renaissance Group - Project Proposal</span>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -51,13 +51,6 @@ const AppRouter = () => {
                     ${isActive('/deliverables') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
                   >
                     Deliverables
-                  </Link>
-                  <Link
-                      to="/services"
-                      className={`border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium 
-                    ${isActive('/services') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
-                  >
-                    Services
                   </Link>
                   <Link
                       to="/commercials"
@@ -121,14 +114,6 @@ const AppRouter = () => {
                     Overview
                   </Link>
                   <Link
-                      to="/timeline"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
-                  ${isActive('/timeline') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
-                  >
-                    Implementation Timeline
-                  </Link>
-                  <Link
                       to="/mockups"
                       onClick={() => setIsMenuOpen(false)}
                       className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
@@ -136,6 +121,15 @@ const AppRouter = () => {
                   >
                     UI Mockups
                   </Link>
+                  <Link
+                      to="/timeline"
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
+                  ${isActive('/timeline') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
+                  >
+                    Implementation Timeline
+                  </Link>
+
                   <Link
                       to="/deliverables"
                       onClick={() => setIsMenuOpen(false)}

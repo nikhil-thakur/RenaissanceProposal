@@ -223,7 +223,6 @@ const ResourceAllocationPlan = () => {
         "Provide resources for comprehensive user acceptance testing",
         "Participate in training sessions (train-the-trainer approach)",
         "Prepare organization for change management activities",
-        "Validate system integrations with enterprise applications",
         "Participate in go-live readiness assessment and decision"
       ],
       effort: "High (15-20 hours/week)"
@@ -237,11 +236,10 @@ const ResourceAllocationPlan = () => {
         "Provide high-level project oversight",
         "Remove organizational obstacles",
         "Approve major changes to scope, budget, or timeline",
-        "Participate in quarterly project reviews",
         "Serve as final escalation point for critical issues"
       ],
       meetings: [
-        { name: "Quarterly Project Review", frequency: "Every 3 months" },
+
         { name: "Critical Issue Resolution", frequency: "As needed" }
       ]
     },
@@ -549,21 +547,6 @@ const ResourceAllocationPlan = () => {
                     <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <h5 className="font-medium text-gray-800">Project Manager</h5>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-2">
-                    Day-to-day contact who coordinates client resources and communications.
-                  </p>
-                  <div className="text-xs text-gray-500">
-                    <span className="font-medium">Time Commitment:</span> 8-12 hours per week
-                  </div>
-                </div>
-                
-                <div className="bg-white p-4 rounded-lg border border-gray-200">
-                  <div className="flex items-center mb-3">
-                    <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
                     <h5 className="font-medium text-gray-800">Subject Matter Experts</h5>
                   </div>
                   <p className="text-sm text-gray-600 mb-2">
@@ -573,22 +556,6 @@ const ResourceAllocationPlan = () => {
                     <span className="font-medium">Time Commitment:</span> 4-8 hours per week (varies by phase)
                   </div>
                 </div>
-                
-                <div className="bg-white p-4 rounded-lg border border-gray-200">
-                  <div className="flex items-center mb-3">
-                    <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    <h5 className="font-medium text-gray-800">IT Representative</h5>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-2">
-                    Technical contact who can provide information on systems, integrations, and infrastructure.
-                  </p>
-                  <div className="text-xs text-gray-500">
-                    <span className="font-medium">Time Commitment:</span> 4-6 hours per week
-                  </div>
-                </div>
-                
                 <div className="bg-white p-4 rounded-lg border border-gray-200">
                   <div className="flex items-center mb-3">
                     <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -609,10 +576,10 @@ const ResourceAllocationPlan = () => {
                     <svg className="w-5 h-5 text-orange-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                     </svg>
-                    <h5 className="font-medium text-gray-800">Department Champions</h5>
+                    <h5 className="font-medium text-gray-800">Project Champions</h5>
                   </div>
                   <p className="text-sm text-gray-600 mb-2">
-                    Representatives who will support change management and adoption within their departments.
+                    Representatives who will support change management and adoption within their projects.
                   </p>
                   <div className="text-xs text-gray-500">
                     <span className="font-medium">Time Commitment:</span> 4-6 hours per week during later phases

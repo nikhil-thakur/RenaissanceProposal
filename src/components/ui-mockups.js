@@ -58,13 +58,7 @@ const KeySystemMockups = () => {
                   </div>
                 </div>
 
-                {/* Chart and Status Area */}
-                <div className="bg-gray-50 p-4 mb-6 border border-gray-200 rounded-lg">
-                  <h4 className="font-medium text-gray-800 mb-4">Compliance Trends (Last 12 Months)</h4>
-                  <div className="h-48 w-full bg-white border border-gray-100 rounded flex items-center justify-center">
-                    <div className="text-gray-400">Interactive chart showing compliance trends will appear here</div>
-                  </div>
-                </div>
+
 
                 {/* Project Table */}
                 <div className="overflow-x-auto border border-gray-200 rounded-lg">
@@ -125,7 +119,6 @@ const KeySystemMockups = () => {
             <ul className="list-disc list-inside space-y-1 text-gray-700">
               <li>Real-time compliance monitoring across all projects</li>
               <li>Executive KPIs focused on project health and compliance status</li>
-              <li>Trend analysis to identify patterns and recurring issues</li>
               <li>Priority-based alert system for immediate attention areas</li>
               <li>Drill-down capabilities to investigate specific projects</li>
             </ul>
@@ -241,7 +234,6 @@ const KeySystemMockups = () => {
               <li>Intuitive time entry interface with easy week navigation</li>
               <li>Real-time compliance checks during time entry</li>
               <li>Project and task selection with appropriate permissions</li>
-              <li>Automated overtime calculation and flagging</li>
               <li>Support for multiple projects and billing categories</li>
             </ul>
           </div>
@@ -386,9 +378,6 @@ const KeySystemMockups = () => {
                     <a href="#" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-3 py-2 text-sm font-medium rounded-md">
                       Reports
                     </a>
-                    <a href="#" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-3 py-2 text-sm font-medium rounded-md">
-                      Audit Logs
-                    </a>
                   </nav>
                 </div>
 
@@ -434,7 +423,6 @@ const KeySystemMockups = () => {
               <li>Project configuration and template management</li>
               <li>System-wide settings and configuration options</li>
               <li>Security controls and access policies</li>
-              <li>Audit logging and compliance monitoring</li>
             </ul>
           </div>
         </div>
