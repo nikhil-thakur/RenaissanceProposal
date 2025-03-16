@@ -19,7 +19,7 @@ const AppRouter = () => {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <span className="text-orange-500 font-bold text-xl">Renaissance Group - Project Proposal</span>
+                  <span className="text-orange-500 font-bold text-xl">Renaissance Group Proposal</span>
                 </div>
 
                 {/* Desktop Navigation */}
