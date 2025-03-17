@@ -114,6 +114,14 @@ const AppRouter = () => {
                     Overview
                   </Link>
                   <Link
+                      to="/deliverables"
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
+                  ${isActive('/deliverables') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
+                  >
+                    Deliverables
+                  </Link>
+                  <Link
                       to="/mockups"
                       onClick={() => setIsMenuOpen(false)}
                       className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
@@ -128,31 +136,6 @@ const AppRouter = () => {
                   ${isActive('/timeline') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
                   >
                     Implementation Timeline
-                  </Link>
-
-                  <Link
-                      to="/deliverables"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
-                  ${isActive('/deliverables') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
-                  >
-                    Deliverables
-                  </Link>
-                  <Link
-                      to="/services"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
-                  ${isActive('/services') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
-                  >
-                    Services
-                  </Link>
-                  <Link
-                      to="/commercials"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
-                  ${isActive('/commercials') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
-                  >
-                    Investment
                   </Link>
                   <Link
                       to="/risks"
@@ -169,6 +152,14 @@ const AppRouter = () => {
                   ${isActive('/resources') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
                   >
                     Resource Allocation
+                  </Link>
+                  <Link
+                      to="/commercials"
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block pl-3 pr-4 py-2 border-l-4 text-base font-medium 
+                  ${isActive('/commercials') ? 'bg-orange-50 border-orange-500 text-orange-700' : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800'}`}
+                  >
+                    Investment
                   </Link>
                 </div>
               </div>
@@ -187,7 +178,7 @@ const AppRouter = () => {
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
             <div className="flex justify-between items-center">
               <div className="text-sm text-gray-500">
-                © {currentYear} Renaissance Project Proposal
+                © {currentYear} Nikhil Thakur
               </div>
               <div className="flex space-x-6">
                 <a

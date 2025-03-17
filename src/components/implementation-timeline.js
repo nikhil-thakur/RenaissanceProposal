@@ -1,11 +1,37 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const DetailedImplementationTimeline = () => {
   const [expandedWeek, setExpandedWeek] = useState(null);
+  const weekRefs = useRef({});
 
   const toggleWeek = (weekId) => {
-    setExpandedWeek(expandedWeek === weekId ? null : weekId);
+    // If this week is already expanded, close it
+    if (expandedWeek === weekId) {
+      setExpandedWeek(null);
+      return;
+    }
+
+    // Otherwise, expand this week
+    setExpandedWeek(weekId);
+
+    // Use setTimeout to ensure the state update completes and the content is rendered
+    // before attempting to scroll to it
+    setTimeout(() => {
+      if (weekRefs.current[weekId]) {
+        // Scroll to the top of the expanded week
+        weekRefs.current[weekId].scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
   };
+
+  // Initialize refs for each week when component mounts
+  useEffect(() => {
+    // Reset refs object when component mounts
+    weekRefs.current = {};
+  }, []);
 
   const phases = [
     {
@@ -27,7 +53,7 @@ const DetailedImplementationTimeline = () => {
             { name: "Data flow mapping diagrams", status: "Deliverable" }
           ],
           meetings: [
-            "Kickoff meeting with executive sponsor (Day 1)",
+            "Kickoff meeting with executive sponsors (Day 1)",
             "Daily standup meetings (15 minutes)",
             "Technical environment assessment workshop (Day 3)",
             "User journey mapping session (Day 4)"
@@ -224,7 +250,7 @@ const DetailedImplementationTimeline = () => {
       id: "complete-system",
       name: "DEPLOYMENT & OPTIMIZATION",
       color: "bg-purple-700",
-      textColor: "text-purple-700", 
+      textColor: "text-purple-700",
       borderColor: "border-purple-700",
       duration: "Weeks 10-16",
       weeks: [
@@ -389,117 +415,121 @@ const DetailedImplementationTimeline = () => {
   ];
 
   return (
-    <div className="w-full bg-white p-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-8">Week-by-Week Implementation Plan</h2>
-        
-        {phases.map((phase) => (
-          <div key={phase.id} className="mb-10">
-            <div className={`${phase.color} text-white p-4 rounded-t-lg`}>
-              <h3 className="text-xl font-bold">{phase.name}: {phase.duration}</h3>
-            </div>
-            
-            <div className="space-y-3 p-2 bg-gray-50 rounded-b-lg border border-gray-200">
-              {phase.weeks.map((week) => (
-                <div key={week.id} className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
-                  <div 
-                    className={`flex items-center justify-between p-4 cursor-pointer ${expandedWeek === week.id ? 'border-b border-gray-200' : ''}`}
-                    onClick={() => toggleWeek(week.id)}
-                  >
-                    <h4 className={`font-medium ${phase.textColor}`}>{week.name}</h4>
-                    <div>
-                      <svg className={`w-5 h-5 transition-transform ${expandedWeek === week.id ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  
-                  {expandedWeek === week.id && (
-                    <div className="p-4">
-                      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                        <div className="bg-gray-50 p-4 rounded-lg">
-                          <h5 className={`${phase.textColor} font-medium mb-3`}>Deliverables & Activities</h5>
-                          <ul className="space-y-2">
-                            {week.deliverables.map((item, idx) => (
-                              <li key={idx} className="flex items-start">
+      <div className="w-full bg-white p-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-8">Week-by-Week Implementation Plan</h2>
+
+          {phases.map((phase) => (
+              <div key={phase.id} className="mb-10">
+                <div className={`${phase.color} text-white p-4 rounded-t-lg`}>
+                  <h3 className="text-xl font-bold">{phase.name}: {phase.duration}</h3>
+                </div>
+
+                <div className="space-y-3 p-2 bg-gray-50 rounded-b-lg border border-gray-200">
+                  {phase.weeks.map((week) => (
+                      <div
+                          key={week.id}
+                          ref={el => weekRefs.current[week.id] = el}
+                          className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden"
+                      >
+                        <div
+                            className={`flex items-center justify-between p-4 cursor-pointer ${expandedWeek === week.id ? 'border-b border-gray-200' : ''}`}
+                            onClick={() => toggleWeek(week.id)}
+                        >
+                          <h4 className={`font-medium ${phase.textColor}`}>{week.name}</h4>
+                          <div>
+                            <svg className={`w-5 h-5 transition-transform ${expandedWeek === week.id ? 'transform rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                          </div>
+                        </div>
+
+                        {expandedWeek === week.id && (
+                            <div className="p-4">
+                              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                <div className="bg-gray-50 p-4 rounded-lg">
+                                  <h5 className={`${phase.textColor} font-medium mb-3`}>Deliverables & Activities</h5>
+                                  <ul className="space-y-2">
+                                    {week.deliverables.map((item, idx) => (
+                                        <li key={idx} className="flex items-start">
                                 <span className={`flex-shrink-0 inline-block w-20 text-xs font-semibold rounded-full px-2 py-1 mt-1 mr-2 ${
-                                  item.status === 'Deliverable' ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'
+                                    item.status === 'Deliverable' ? 'bg-green-100 text-green-800' : 'bg-blue-100 text-blue-800'
                                 }`}>
                                   {item.status}
                                 </span>
-                                <span className="text-gray-700">{item.name}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        <div className="bg-gray-50 p-4 rounded-lg">
-                          <h5 className={`${phase.textColor} font-medium mb-3`}>Key Meetings</h5>
-                          <ul className="space-y-2">
-                            {week.meetings.map((meeting, idx) => (
-                              <li key={idx} className="flex items-start">
-                                <svg className="w-5 h-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                                </svg>
-                                <span className="text-gray-700">{meeting}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        <div className="bg-gray-50 p-4 rounded-lg">
-                          <h5 className={`${phase.textColor} font-medium mb-3`}>Decision Points</h5>
-                          <ul className="space-y-2">
-                            {week.decisions.map((decision, idx) => (
-                              <li key={idx} className="flex items-start">
-                                <svg className="w-5 h-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                                <span className="text-gray-700">{decision}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                                          <span className="text-gray-700">{item.name}</span>
+                                        </li>
+                                    ))}
+                                  </ul>
+                                </div>
+
+                                <div className="bg-gray-50 p-4 rounded-lg">
+                                  <h5 className={`${phase.textColor} font-medium mb-3`}>Key Meetings</h5>
+                                  <ul className="space-y-2">
+                                    {week.meetings.map((meeting, idx) => (
+                                        <li key={idx} className="flex items-start">
+                                          <svg className="w-5 h-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                          </svg>
+                                          <span className="text-gray-700">{meeting}</span>
+                                        </li>
+                                    ))}
+                                  </ul>
+                                </div>
+
+                                <div className="bg-gray-50 p-4 rounded-lg">
+                                  <h5 className={`${phase.textColor} font-medium mb-3`}>Decision Points</h5>
+                                  <ul className="space-y-2">
+                                    {week.decisions.map((decision, idx) => (
+                                        <li key={idx} className="flex items-start">
+                                          <svg className="w-5 h-5 text-gray-400 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                          </svg>
+                                          <span className="text-gray-700">{decision}</span>
+                                        </li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                        )}
                       </div>
-                    </div>
-                  )}
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
+          ))}
+
+          <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 mt-8">
+            <h4 className="text-xl font-semibold text-blue-800 mb-3">Implementation Approach Notes:</h4>
+            <ul className="space-y-2">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span className="text-gray-700">Each sprint is 2 weeks in duration with clear deliverables reviewed at the end of each sprint.</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span className="text-gray-700">Deliverables are concrete artifacts or systems that will be provided, while activities represent ongoing processes.</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span className="text-gray-700">All deliverables undergo quality assurance before delivery and are subject to client approval.</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span className="text-gray-700">Timeline adjustments may be necessary based on discovery findings and client feedback, but overall duration commitments will be maintained.</span>
+              </li>
+            </ul>
           </div>
-        ))}
-        
-        <div className="bg-blue-50 p-6 rounded-lg border border-blue-100 mt-8">
-          <h4 className="text-xl font-semibold text-blue-800 mb-3">Implementation Approach Notes:</h4>
-          <ul className="space-y-2">
-            <li className="flex items-start">
-              <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span className="text-gray-700">Each sprint is 2 weeks in duration with clear deliverables reviewed at the end of each sprint.</span>
-            </li>
-            <li className="flex items-start">
-              <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span className="text-gray-700">Deliverables are concrete artifacts or systems that will be provided, while activities represent ongoing processes.</span>
-            </li>
-            <li className="flex items-start">
-              <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span className="text-gray-700">All deliverables undergo quality assurance before delivery and are subject to client approval.</span>
-            </li>
-            <li className="flex items-start">
-              <svg className="w-5 h-5 text-blue-500 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-              <span className="text-gray-700">Timeline adjustments may be necessary based on discovery findings and client feedback, but overall duration commitments will be maintained.</span>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
   );
 };
 
