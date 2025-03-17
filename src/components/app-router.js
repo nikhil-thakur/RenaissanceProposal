@@ -32,11 +32,11 @@ const AppRouter = () => {
                     Overview
                   </Link>
                   <Link
-                      to="/timeline"
+                      to="/deliverables"
                       className={`border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium 
-                    ${isActive('/timeline') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
+                    ${isActive('/deliverables') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
                   >
-                    Timeline
+                    Deliverables
                   </Link>
                   <Link
                       to="/mockups"
@@ -46,18 +46,11 @@ const AppRouter = () => {
                     Mockups
                   </Link>
                   <Link
-                      to="/deliverables"
+                      to="/timeline"
                       className={`border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium 
-                    ${isActive('/deliverables') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
+                    ${isActive('/timeline') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
                   >
-                    Deliverables
-                  </Link>
-                  <Link
-                      to="/commercials"
-                      className={`border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium 
-                    ${isActive('/commercials') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
-                  >
-                    Investment
+                    Timeline
                   </Link>
                   <Link
                       to="/risks"
@@ -72,6 +65,13 @@ const AppRouter = () => {
                     ${isActive('/resources') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
                   >
                     Resource Allocation
+                  </Link>
+                  <Link
+                      to="/commercials"
+                      className={`border-transparent inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium 
+                    ${isActive('/commercials') ? 'text-orange-500 border-orange-500' : 'text-gray-500 hover:text-gray-800 hover:border-gray-300'}`}
+                  >
+                    Investment
                   </Link>
                 </div>
               </div>
