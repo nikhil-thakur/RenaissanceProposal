@@ -27,7 +27,7 @@ const DetailedImplementationTimeline = () => {
             { name: "Data flow mapping diagrams", status: "Deliverable" }
           ],
           meetings: [
-            "Kickoff meeting with executive sponsors (Day 1)",
+            "Kickoff meeting with executive sponsor (Day 1)",
             "Daily standup meetings (15 minutes)",
             "Technical environment assessment workshop (Day 3)",
             "User journey mapping session (Day 4)"
