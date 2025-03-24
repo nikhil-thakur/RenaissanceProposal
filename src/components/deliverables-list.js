@@ -42,7 +42,7 @@ const SimpleDeliverablesList = () => {
           </svg>
       ),
       color: 'bg-blue-500',
-      description: 'Development of core functionality and delivery of first usable version.'
+      description: 'Development of core functionality, first project and user onboarding, and delivery of first usable version.'
     },
     {
       id: 'complete-system',
@@ -87,7 +87,7 @@ const SimpleDeliverablesList = () => {
       name: 'System Architecture Blueprint',
       description: 'Technical architecture diagrams and specifications',
       format: 'PDF Document with Diagrams',
-      audience: 'Technical Team',
+      audience: 'IT Team',
       type: 'Documentation',
       priority: 'High'
     },
@@ -97,7 +97,7 @@ const SimpleDeliverablesList = () => {
       name: 'Requirements Workshop',
       description: 'Facilitated session to gather and validate requirements from key stakeholders',
       format: 'In-person or Virtual Session',
-      audience: 'Key Users',
+      audience: 'Renaissance Team',
       type: 'Workshop',
       priority: 'Medium'
     },
@@ -107,7 +107,7 @@ const SimpleDeliverablesList = () => {
       name: 'Process Mapping Workshop',
       description: 'Session to document current and future state process flows',
       format: 'In-person or Virtual Session',
-      audience: 'Process Owners',
+      audience: 'Renaissance Team',
       type: 'Workshop',
       priority: 'Medium'
     },
@@ -126,8 +126,8 @@ const SimpleDeliverablesList = () => {
     {
       id: 7,
       phase: 'mvp',
-      name: 'Time Entry Interface',
-      description: 'User interface for time card submission and management',
+      name: 'Payroll Hours Interface',
+      description: 'User interface for payroll management',
       format: 'Software Module',
       audience: 'All System Users',
       type: 'Software',
@@ -137,9 +137,9 @@ const SimpleDeliverablesList = () => {
       id: 8,
       phase: 'mvp',
       name: 'Compliance Rules Engine',
-      description: 'Business rules implementation for time card compliance checks',
+      description: 'Business rules implementation for minority, women, local and section 3 compliance checks',
       format: 'Software Module',
-      audience: 'Compliance Team',
+      audience: 'Renaissance Team',
       type: 'Software',
       priority: 'High'
     },
@@ -159,7 +159,7 @@ const SimpleDeliverablesList = () => {
       name: 'Administrator Guide',
       description: 'Technical documentation for system administrators',
       format: 'PDF Document',
-      audience: 'System Administrators',
+      audience: 'System Administrator',
       type: 'Documentation',
       priority: 'Medium'
     },
@@ -171,7 +171,7 @@ const SimpleDeliverablesList = () => {
       name: 'Advanced Dashboard System',
       description: 'Role-specific dashboards with KPIs and visualization',
       format: 'Software Module',
-      audience: 'Managers',
+      audience: 'Renaissance Team',
       type: 'Software',
       priority: 'High'
     },
@@ -181,7 +181,7 @@ const SimpleDeliverablesList = () => {
       name: 'Advanced Reporting System',
       description: 'Custom report builder and scheduled reports',
       format: 'Software Module',
-      audience: 'Managers',
+      audience: 'Renaissance Team',
       type: 'Software',
       priority: 'High'
     },
@@ -211,7 +211,7 @@ const SimpleDeliverablesList = () => {
       name: 'Maintenance & Support Procedures',
       description: 'Guidelines for ongoing system support',
       format: 'Document',
-      audience: 'Support Team',
+      audience: 'IT Team',
       type: 'Documentation',
       priority: 'Medium'
     }
@@ -304,7 +304,7 @@ const SimpleDeliverablesList = () => {
                         onChange={(e) => setFilterAudience(e.target.value)}
                     >
                       {audienceOptions.map(option => (
-                          <option key={option} value={option}>{option} Audience</option>
+                          <option key={option} value={option}>{option}</option>
                       ))}
                     </select>
                   </div>
@@ -560,15 +560,28 @@ const SimpleDeliverablesList = () => {
                   <h5 className="text-sm font-medium text-gray-700 mb-2">Audience</h5>
                   <div className="space-y-2">
                     <div className="flex items-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">Technical Team</span>
-                      <span className="text-sm text-gray-600">IT and development staff</span>
+                      <span
+                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">Renaissance Team</span>
+                      <span className="text-sm text-gray-600">Managers and key stakeholder (Sandy Payben)</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">Project Team</span>
-                      <span className="text-sm text-gray-600">Project managers and coordinators</span>
+                      <span
+                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">Project Team</span>
+                      <span className="text-sm text-gray-600">Engineering team</span>
                     </div>
                     <div className="flex items-center">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">All System Users</span>
+                      <span
+                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">Technical Support</span>
+                      <span className="text-sm text-gray-600">Simran Chavda</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span
+                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">System Administrator</span>
+                      <span className="text-sm text-gray-600">Tina Bradshaw</span>
+                    </div>
+                    <div className="flex items-center">
+                      <span
+                          className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mr-2">All System Users</span>
                       <span className="text-sm text-gray-600">Anyone who will use the system</span>
                     </div>
                   </div>
@@ -579,7 +592,8 @@ const SimpleDeliverablesList = () => {
             {/* Formal Acceptance Process */}
             <div className="bg-orange-50 p-6 border-t border-orange-100">
               <div className="flex items-start">
-                <svg className="w-6 h-6 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                     viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
                 <div>
