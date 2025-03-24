@@ -162,10 +162,10 @@ const DetailedImplementationTimeline = () => {
         },
         {
           id: "week6",
-          name: "Week 6: Time Card Processing I",
+          name: "Week 6: Payroll Processing I",
           deliverables: [
-            { name: "Time entry forms & interfaces", status: "Deliverable" },
-            { name: "Timesheet submission workflow", status: "Deliverable" },
+            { name: "Payroll forms & interfaces", status: "Deliverable" },
+            { name: "Payroll submission workflow", status: "Deliverable" },
             { name: "Data validation & error handling", status: "Deliverable" },
             { name: "Sprint 2 retrospective documentation", status: "Deliverable" }
           ],
@@ -173,31 +173,28 @@ const DetailedImplementationTimeline = () => {
             "Daily standup meetings (15 minutes)",
             "Sprint 2 demo & review (Day 1)",
             "Sprint 3 planning (Day 1)",
-            "Time tracking workflow validation (Day 3)"
+            "Payroll workflow validation (Day 3)"
           ],
           decisions: [
-            "Time approval workflow configuration",
-            "Overtime calculation rules",
-            "Compliance flag validation criteria"
+            "Payroll workflow configuration",
           ]
         },
         {
           id: "week7",
-          name: "Week 7: Time Card Processing II",
+          name: "Week 7: Payroll Processing II",
           deliverables: [
             { name: "Approval workflows & notifications", status: "Deliverable" },
-            { name: "Compliance check algorithms", status: "Deliverable" },
+            { name: "Section 3 check algorithms", status: "Deliverable" },
             { name: "Historical time data views", status: "Deliverable" },
             { name: "Preliminary user documentation", status: "Deliverable" }
           ],
           meetings: [
             "Daily standup meetings (15 minutes)",
             "Mid-sprint review (Day 3)",
-            "Compliance rules verification (Day 4)"
+            "Section 3: rules verification (Day 4)"
           ],
           decisions: [
             "Payroll system integration approach",
-            "Compliance alerting thresholds",
             "Data export format standards"
           ]
         },
@@ -206,8 +203,7 @@ const DetailedImplementationTimeline = () => {
           name: "Week 8: Reporting Engine Development",
           deliverables: [
             { name: "Core reporting framework", status: "Deliverable" },
-            { name: "Standard reports template library", status: "Deliverable" },
-            { name: "Report scheduling & distribution system", status: "Deliverable" },
+            { name: "Standard reports template", status: "Deliverable" },
             { name: "Data visualization components", status: "Deliverable" }
           ],
           meetings: [
@@ -219,7 +215,7 @@ const DetailedImplementationTimeline = () => {
           decisions: [
             "Report access permissions strategy",
             "Export format options",
-            "Compliance report content finalization"
+            "Section 3 report content finalization"
           ]
         },
         {
@@ -227,7 +223,7 @@ const DetailedImplementationTimeline = () => {
           name: "Week 9: Dashboard & Integration",
           deliverables: [
             { name: "Executive dashboard with KPIs", status: "Deliverable" },
-            { name: "Manager dashboard with team metrics", status: "Deliverable" },
+            { name: "Manager dashboard", status: "Deliverable" },
             { name: "User dashboard with individual stats", status: "Deliverable" },
             { name: "Initial data migration scripts", status: "Deliverable" },
             { name: "Integration with notification system", status: "Deliverable" }
@@ -240,7 +236,6 @@ const DetailedImplementationTimeline = () => {
           ],
           decisions: [
             "Dashboard personalization options",
-            "Alert threshold configurations",
             "MVP feature freeze"
           ]
         }
@@ -305,7 +300,6 @@ const DetailedImplementationTimeline = () => {
             { name: "UAT issue resolution report", status: "Deliverable" },
             { name: "Final user interface refinements", status: "Deliverable" },
             { name: "Performance optimization implementation", status: "Deliverable" },
-            { name: "Data migration script finalization", status: "Deliverable" }
           ],
           meetings: [
             "Daily standup meetings (15 minutes)",
@@ -315,7 +309,6 @@ const DetailedImplementationTimeline = () => {
           ],
           decisions: [
             "Final feature scope for initial launch",
-            "Data migration schedule approval",
             "Go-live criteria confirmation"
           ]
         },
@@ -324,7 +317,6 @@ const DetailedImplementationTimeline = () => {
           name: "Week 13: Pilot Deployment",
           deliverables: [
             { name: "Production environment setup", status: "Deliverable" },
-            { name: "Data migration execution (pilot group)", status: "Activity" },
             { name: "Pilot user onboarding", status: "Activity" },
             { name: "System monitoring configuration", status: "Deliverable" },
             { name: "Pilot feedback collection tool", status: "Deliverable" }
@@ -369,9 +361,8 @@ const DetailedImplementationTimeline = () => {
           name: "Week 15: Full Deployment & Training",
           deliverables: [
             { name: "Full system deployment to production", status: "Activity" },
-            { name: "Complete data migration execution", status: "Activity" },
             { name: "User training sessions delivery", status: "Activity" },
-            { name: "Department-specific work instruction guides", status: "Deliverable" },
+            { name: "Project-specific work instruction guides", status: "Deliverable" },
             { name: "Post-deployment verification report", status: "Deliverable" }
           ],
           meetings: [
